@@ -1,6 +1,6 @@
 # Student Depression Dataset - SQL & Tableau Analytics Project
 
-![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Version](https://img.shields.io/badge/Version-1.0-blue) ![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Version](https://img.shields.io/badge/Version-1.0-blue) 
 
 ## 📊 Project Overview
 
@@ -22,10 +22,8 @@ student-depression-tableau-project/
 │   ├── data_cleaning.sql          # Data preprocessing queries
 │   ├── data_validation.sql        # Validation and integrity checks
 │   └── sample_queries.sql         # Exploratory analysis queries
-├── data/
-│   ├── raw_data/                  # Original dataset
-│   ├── cleaned_data/              # Processed dataset
-│   └── data_dictionary.md         # Column definitions
+├── dataset/
+│   ├── raw_data/                # Original dataset
 ├── tableau/
 │   ├── Student-Depression-Dashboard.twbx  # Tableau workbook file
 │   ├── visualizations/
@@ -35,12 +33,7 @@ student-depression-tableau-project/
 │   │   ├── Study_Hours_Analysis.png
 │   │   ├── Study_Satisfaction_Analysis.png
 │   │   └── Dashboard_Overview.png
-│   └── dashboard_description.md   # Sheet descriptions
-├── docs/
-│   ├── methodology.md             # Analysis approach
-│   ├── findings.md                # Key insights
-│   └── technical_stack.md         # Tools used
-└── screenshots/                   # Additional dashboard screenshots
+│   └── Student Depression Analysis.pdf   # Sheet PDF
 
 ```
 
@@ -84,7 +77,7 @@ student-depression-tableau-project/
 | Component | Technology | Version |
 |-----------|-----------|---------|
 | Data Cleaning | SQL | Standard SQL |
-| Database | SQL Server/MySQL/PostgreSQL | Latest |
+| Database | SQL Server | Latest |
 | Visualization | Tableau Desktop | 2024.x |
 | Hosting | Tableau Cloud | Production |
 | Version Control | Git/GitHub | - |
@@ -92,18 +85,6 @@ student-depression-tableau-project/
 ## 📊 Data Cleaning & Preprocessing
 
 ### SQL Operations Performed
-
-```sql
--- Column modifications and updates
-ALTER TABLE students ADD COLUMN depression_level INT;
-UPDATE students SET depression_level = ... WHERE conditions;
-
--- Data validation
-DELETE FROM students WHERE depression_level IS NULL;
-
--- Standardization
-UPDATE students SET academic_pressure = LOWER(academic_pressure);
-```
 
 **Key Preprocessing Steps:**
 - Removed NULL and duplicate values
@@ -231,21 +212,7 @@ Suggestions for improvements:
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see LICENSE file for details.
-
-## 👤 Author
-
-**[Your Name/Username]**
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Portfolio: [Your Website](https://yourportfolio.com)
-
-## 📞 Contact & Support
-
-For questions or collaboration:
-- Email: your.email@example.com
-- GitHub Issues: [Report a bug](../../issues)
-- Discussions: [Ask questions](../../discussions)
+\
 
 ## 🙏 Acknowledgments
 
